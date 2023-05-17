@@ -26,4 +26,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
+          file: ./Dockerfile
           tags: tamilarasand002/test1:latest
