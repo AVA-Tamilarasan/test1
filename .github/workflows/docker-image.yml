@@ -29,9 +29,8 @@ jobs:
           context: ./frontend
           push: true
           tags: tamilarasand002/test1:latest
+          run: docker push tamilarasand002/test1:latest
      
       - name: List Docker images
         run: docker images
         
-      - name: Push Docker image to Docker Hub
-        run: docker push tamilarasand002/test1:latest
