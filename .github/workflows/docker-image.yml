@@ -22,7 +22,7 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: ${{ github.repository }}:latest
+          tags: tamilarasand002/test1:latest
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
@@ -31,4 +31,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.TAMILARASAN }}/${{ github.repository }}:latest
+        run: docker push ${{ secrets.TAMILARASAN }}/tamilarasand002/test1:latest
