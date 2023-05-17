@@ -25,6 +25,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
-          push: true
+          context: .
           file: ./frontend/Dockerfile
+          push: true
           tags: tamilarasand002/test1:latest
