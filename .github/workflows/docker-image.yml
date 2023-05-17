@@ -32,4 +32,4 @@ jobs:
 
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.TAMILARASAN }}/tamilarasand002/test1:latest
+        run: docker push ${{ secrets.TAMILARASAN }}/test1:latest
